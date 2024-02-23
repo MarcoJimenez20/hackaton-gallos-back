@@ -1,0 +1,8 @@
+server:
+  port: 9080
+  servlet:
+    context-path: /api/gallos/v1
+feign:
+  client:
+    hp-service:
+      url: https://hp-api.onrender.com/api
