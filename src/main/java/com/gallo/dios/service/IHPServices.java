@@ -1,11 +1,11 @@
 package com.gallo.dios.service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.gallo.dios.model.ResponseGallos;
+import org.springframework.http.ResponseEntity;
 
 public interface IHPServices {
 
-    JsonNode todosPersonajes();
+    ResponseGallos estatusGeneralServicios();
 
 
 }

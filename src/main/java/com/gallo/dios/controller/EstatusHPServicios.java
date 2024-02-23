@@ -12,8 +12,8 @@ public class EstatusHPServicios {
     @Autowired
     private IHPServices ihpServices;
 
-    @RequestMapping("/estatus/servicios")
+    @RequestMapping("/services/status")
     public ResponseEntity<?> executeStatusServices(){
-        return ResponseEntity.ok(ihpServices.todosPersonajes());
+        return ResponseEntity.ok(ihpServices.estatusGeneralServicios());
     }
 }
