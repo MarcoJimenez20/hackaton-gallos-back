@@ -13,4 +13,16 @@ public interface HPClient {
 
     @GetMapping("/character/{id}")
     ResponseEntity<String> characterById(@PathVariable String id);
+
+    @GetMapping("/characters/students")
+    ResponseEntity<String> allStudents();
+
+    @GetMapping("/characters/staff")
+    ResponseEntity<String> allStaff();
+
+    @GetMapping("/characters/house/{houseName}")
+    ResponseEntity<String> charactersByHouse(@PathVariable String houseName);
+
+    @GetMapping("/spells")
+    ResponseEntity<String> allSpells();
 }
